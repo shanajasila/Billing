@@ -10,7 +10,10 @@ public class Hotel {
     Hotel(){
 
     }
-
+    public int tea(int count){
+        this.tea=count*10;
+        return tea;
+    }
     public static void main(String[] args) {
         ArrayList<Hotel> or=new ArrayList<Hotel>();
         System.out.println("Enter customer name : ");
@@ -23,7 +26,12 @@ public class Hotel {
             System.out.println("Select from below menu :\n");
             System.out.println("\n1.Tea - 10\n2.=Coffee - 15\n3.Iddali - 8\n4.Dosa - 6\n");
             int menu= sc.nextInt();
-
+            switch (menu){
+                case 1:
+                    System.out.println("How many tea you wanted ");
+                    int ct= sc.nextInt();
+                    ht.tea(ct);
+            }
         }
     }
 }
