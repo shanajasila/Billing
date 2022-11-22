@@ -18,6 +18,10 @@ public class Hotel {
             this.cofee=count*15;
             return cofee;
     }
+    public int iddali(int count){
+        this.iddali=count*8;
+        return iddali;
+    }
     public static void main(String[] args) {
         ArrayList<Hotel> or=new ArrayList<Hotel>();
         System.out.println("Enter customer name : ");
@@ -42,6 +46,11 @@ public class Hotel {
                     int cc= sc.nextInt();
                     ht.cofee(cc);
                     System.out.println(ht.cofee);
+                case 3:
+                    System.out.println("How many Iddali you wanted ");
+                    int ci= sc.nextInt();
+                    ht.iddali(ci);
+                    System.out.println(ht.iddali);
             }
         }
     }
