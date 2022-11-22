@@ -22,6 +22,10 @@ public class Hotel {
         this.iddali=count*8;
         return iddali;
     }
+    public int dosa(int count){
+        this.dosa=count*6;
+        return dosa;
+    }
     public static void main(String[] args) {
         ArrayList<Hotel> or=new ArrayList<Hotel>();
         System.out.println("Enter customer name : ");
@@ -46,11 +50,19 @@ public class Hotel {
                     int cc= sc.nextInt();
                     ht.cofee(cc);
                     System.out.println(ht.cofee);
+                    break;
                 case 3:
                     System.out.println("How many Iddali you wanted ");
                     int ci= sc.nextInt();
                     ht.iddali(ci);
                     System.out.println(ht.iddali);
+                    break;
+                case 4:
+                    System.out.println("How many Dosa you wanted ");
+                    int cs= sc.nextInt();
+                    ht.dosa(cs);
+                    System.out.println(ht.dosa);
+                    break;
             }
         }
     }
