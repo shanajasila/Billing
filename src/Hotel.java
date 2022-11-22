@@ -10,9 +10,13 @@ public class Hotel {
     Hotel(){
 
     }
-    public int tea(int count){
-        this.tea=count*10;
+    public int tea(int count) {
+        this.tea = count * 10;
         return tea;
+    }
+    public int cofee(int count){
+            this.cofee=count*15;
+            return cofee;
     }
     public static void main(String[] args) {
         ArrayList<Hotel> or=new ArrayList<Hotel>();
@@ -31,6 +35,13 @@ public class Hotel {
                     System.out.println("How many tea you wanted ");
                     int ct= sc.nextInt();
                     ht.tea(ct);
+                    System.out.println(ht.tea);
+                    break;
+                case 2:
+                    System.out.println("How many Coffee you wanted ");
+                    int cc= sc.nextInt();
+                    ht.cofee(cc);
+                    System.out.println(ht.cofee);
             }
         }
     }
